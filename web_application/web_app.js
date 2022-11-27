@@ -92,13 +92,13 @@ function getWeather(latitude, longitude){
   // INFORMACIÓN PARA OBTENER EL TIEMPO:
   /*  lat     = latitud
       lon     = longitud
-      API key = 774dcf442041de7dbb0de2d18e7cfb96 (https://openweathermap.org/api)
+      API key = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx (https://openweathermap.org/api)
       lang    = es (idioma de la descripción)
       units   = metric
   */
 
   // Obtener el tiempo actual
-  var url = "api.openweathermap.org/data/2.5/weather?lat=" +latitude+ "&lon=" +longitude+ "&appid=774dcf442041de7dbb0de2d18e7cfb96&lang=es&units=metric"; 
+  var url = "api.openweathermap.org/data/2.5/weather?lat=" +latitude+ "&lon=" +longitude+ "&appid=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&lang=es&units=metric"; 
   var response = UrlFetchApp.fetch(url, {method: 'GET',headers: {'Content-Type': 'application/json','Accept': 'application/json'} });
   
   var weatherData     =   JSON.parse(response.getContentText()); // Información obtenida
